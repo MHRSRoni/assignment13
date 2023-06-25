@@ -30,3 +30,21 @@ if (alertTriggerF) {
     appendAlert('this is a failed alert !', 'danger')
   })
 }
+
+
+
+const themeToggle = document.getElementById('themeToggle');
+const navbar = document.getElementById("navbar");
+
+function toggleTheme() {
+  if (themeToggle.checked) {
+    document.body.setAttribute('data-bs-theme', 'dark'); // Set theme to dark
+    navbar.classList.replace("bg-light", "bg-secondary")
+  } else {
+    document.body.removeAttribute('data-bs-theme'); // Set theme to default (light)
+    navbar.classList.replace("bg-secondary", "bg-light")
+
+  }
+}
+
+themeToggle.addEventListener('change', toggleTheme);
