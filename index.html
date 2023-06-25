@@ -17,86 +17,748 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Navbar content goes here -->
-      <div class="container-fluid d-flex justify-content-between">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="https://w7.pngwing.com/pngs/798/196/png-transparent-computer-icons-shopping-cart-e-commerce-add-to-cart-button-purple-angle-text-thumbnail.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-              Ease Shoping
-            </a>
-          </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Products</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Complain</a
-              >
-            </li>
-          <form class="d-flex">
-            <input
-              class="form-control me-2 flex-shrink-0"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFblIsAQjlGdeLEEWzQauQ0kRphrw-UHJ9Mw&usqp=CAU" alt="" width="50"  class="d-inline-block align-text-top">
+      Foodie
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+        <li class="nav-item me-2">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#dish">Dish</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#cheef">Cheef</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#review">Review</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="#about" id="notFound">About</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success me-2" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!-- slide  -->
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-1 "></div>
+        <div class="col-10 ">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="https://resizer.otstatic.com/v2/photos/wide-huge/3/51224104.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.margna.ch/bilder/hauptbilder/gastronomie/_2200xAUTO_crop_center-center_none/food-parkhotel-margna-sils-11.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://mlwd5nbv8uri.i.optimole.com/cb:1OS-.5fb6c/w:1000/h:563/q:mauto/https://www.pikes-peak.com/wp-content/uploads/Restaurant-Week-option-1-page-74.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-          </form>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-1 "></div>
+      </div>
+    </div>
+    <!-- card  -->
+    <p class="h3 bg-warning fw-bold ps-4 pt-1 pb-1" id="dish">Dishes</p>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <button type="button" class="btn btn-primary" id="liveToastBtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4 ">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2019/12/sorrel-cappelletti-1.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2019/12/sorrel-cappelletti-1.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4 ">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2019/12/sorrel-cappelletti-1.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-4 mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://robbreport.com/wp-content/uploads/2020/12/grilled-dorade-vernick-fish.jpg?w=1000" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container">
+      <!-- pagination  -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p class="h3 bg-warning fw-bold ps-4 pt-1 pb-1" id="dish">Menu</p>
+     <!-- menu  -->
+     <div class="container mt-5">
+      <h3>Breakfast</h3>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>$10.99</td>
+          </tr>
+          <tr>
+            <td>Burger</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Pasta</td>
+            <td>$12.99</td>
+          </tr>
+          <tr>
+            <td>Salad</td>
+            <td>$6.99</td>
+          </tr>
+          <tr>
+            <td>Sushi</td>
+            <td>$15.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="container mt-2">
+      <h3>Lunch</h3>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>$10.99</td>
+          </tr>
+          <tr>
+            <td>Burger</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Pasta</td>
+            <td>$12.99</td>
+          </tr>
+          <tr>
+            <td>Salad</td>
+            <td>$6.99</td>
+          </tr>
+          <tr>
+            <td>Sushi</td>
+            <td>$15.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="container mt-2">
+      <h3>Dinner</h3>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>$10.99</td>
+          </tr>
+          <tr>
+            <td>Burger</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Pasta</td>
+            <td>$12.99</td>
+          </tr>
+          <tr>
+            <td>Salad</td>
+            <td>$6.99</td>
+          </tr>
+          <tr>
+            <td>Sushi</td>
+            <td>$15.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+     <div class="container mt-2 mb-5">
+      <h3>Snacks</h3>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pizza</td>
+            <td>$10.99</td>
+          </tr>
+          <tr>
+            <td>Burger</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Pasta</td>
+            <td>$12.99</td>
+          </tr>
+          <tr>
+            <td>Salad</td>
+            <td>$6.99</td>
+          </tr>
+          <tr>
+            <td>Sushi</td>
+            <td>$15.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- cheef  -->
+    <p class="h3 bg-warning fw-bold ps-4 pt-1 pb-1" id="cheef">Cheef</p>
+    <div class="container mt-4">
       <div class="row">
-        <div class="col-lg-8">
-          <!-- Content goes here -->
-        </div>
-        <div class="col-lg-4">
-          <!-- Sidebar or additional content goes here -->
+        <div class="col-6">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://media.istockphoto.com/id/929008564/photo/handsome-bearded-cheef-cook-prepairing-spaghetti-on-a-kitchen-chef-cooks-meal.jpg?s=1024x1024&w=is&k=20&c=8FB4IF7iPUvepHg1GxCwEk-oaEkSEJBEIEdYm3ewB4s=" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Kamrul Islam</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum facere autem praesentium. Ullam asperiores voluptates excepturi, ad assumenda nesciunt cupiditate inventore dignissimos culpa officia? Illum mollitia odio deleniti veniam magni repellat explicabo, eius, fugiat maiores minus commodi, voluptate ratione voluptas enim perspiciatis quasi laboriosam. </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="col-6">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://thumbs.dreamstime.com/b/handsome-chef-preparing-meal-7811708.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Kamrul Islam</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum facere autem praesentium. Ullam asperiores voluptates excepturi, ad assumenda nesciunt cupiditate inventore dignissimos culpa officia? Illum mollitia odio deleniti veniam magni repellat explicabo, eius, fugiat maiores minus commodi, voluptate ratione voluptas enim perspiciatis quasi laboriosam. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.shutterstock.com/image-photo/young-cheerful-nepalese-man-chef-260nw-63764830.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Kamrul Islam</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum facere autem praesentium. Ullam asperiores voluptates excepturi, ad assumenda nesciunt cupiditate inventore dignissimos culpa officia? Illum mollitia odio deleniti veniam magni repellat explicabo, eius, fugiat maiores minus commodi, voluptate ratione voluptas enim perspiciatis quasi laboriosam. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://www.shutterstock.com/image-photo/handsome-bearded-cheef-cook-prepairing-260nw-1040099458.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Kamrul Islam</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum facere autem praesentium. Ullam asperiores voluptates excepturi, ad assumenda nesciunt cupiditate inventore dignissimos culpa officia? Illum mollitia odio deleniti veniam magni repellat explicabo, eius, fugiat maiores minus commodi, voluptate ratione voluptas enim perspiciatis quasi laboriosam. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.shutterstock.com/image-photo/young-cheerful-nepalese-man-chef-260nw-63764830.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Kamrul Islam</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum facere autem praesentium. Ullam asperiores voluptates excepturi, ad assumenda nesciunt cupiditate inventore dignissimos culpa officia? Illum mollitia odio deleniti veniam magni repellat explicabo, eius, fugiat maiores minus commodi, voluptate ratione voluptas enim perspiciatis quasi laboriosam. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://thumbs.dreamstime.com/b/handsome-chef-preparing-meal-7811708.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Kamrul Islam</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis harum facere autem praesentium. Ullam asperiores voluptates excepturi, ad assumenda nesciunt cupiditate inventore dignissimos culpa officia? Illum mollitia odio deleniti veniam magni repellat explicabo, eius, fugiat maiores minus commodi, voluptate ratione voluptas enim perspiciatis quasi laboriosam. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- review  -->
+  <p class="h3 bg-warning fw-bold ps-4 pt-1 pb-1 mt-5 " id="review">Review</p>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>John Doe</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum ullamcorper orci nec posuere.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>Jane Smith</h4>
+          <p>Nullam aliquam facilisis massa at interdum. Fusce auctor, augue id hendrerit suscipit, tellus elit sagittis urna, ut lobortis nisi nisl non sem.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="review border ps-3 pt-2 pb-4 rounded bg-white mb-4">
+          <img src="https://via.placeholder.com/100" alt="User Avatar" class="rounded-circle">
+          <h4>Emily Johnson</h4>
+          <p>In eu gravida odio. Nulla non fringilla metus. Aliquam erat volutpat. Vestibulum rhoncus diam ac est feugiat, et pulvinar tellus commodo.</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <!-- complain  -->
+  <p class="h3 bg-warning fw-bold ps-4 pt-1 pb-1 mt-5 ">Feedback</p>
+  <div class="container mt-5">
+    <!-- Tabs -->
+    <ul class="nav nav-tabs" id="myTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="suggestion-tab" data-bs-toggle="tab" data-bs-target="#suggestion-form" type="button" role="tab" aria-controls="suggestion-form" aria-selected="true">Suggestion</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="complaint-tab" data-bs-toggle="tab" data-bs-target="#complaint-form" type="button" role="tab" aria-controls="complaint-form" aria-selected="false">Complaint</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content bg-info" id="myTabContent">
+      <!-- Suggestion Form -->
+      <div class="tab-pane fade show active" id="suggestion-form" role="tabpanel" aria-labelledby="suggestion-tab">
+        <form class=" bg-info p-4 rounded">
+          <div class="mb-3">
+            <label for="suggestion-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="suggestion-name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="suggestion-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="suggestion-email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="suggestion-message" class="form-label">Suggestion</label>
+            <textarea class="form-control" id="suggestion-message" rows="5" placeholder="Enter your suggestion"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" id="showAlert">Submit Suggestion</button>
+        </form>
+      </div>
+
+      <!-- Complaint Form -->
+      <div class="tab-pane fade" id="complaint-form" role="tabpanel" aria-labelledby="complaint-tab">
+        <form class=" rounded bg-info p-4">
+          <div class="mb-3">
+            <label for="complaint-name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="complaint-name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="complaint-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="complaint-email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="complaint-message" class="form-label">Complaint</label>
+            <textarea class="form-control" id="complaint-message" rows="5" placeholder="Enter your complaint"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" id="showAlert">Submit Complaint</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    <!-- accordion / faq  -->
+    <p class="h3 bg-warning fw-bold ps-4 pt-1 pb-1 mb-4 mt-5">FAQ</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+    <div class="accordion accordion-flush " id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            what are the best dishes here ?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odit at neque, blanditiis excepturi inventore. Nisi vero exercitationem quidem rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur at ad amet voluptates iure recusandae odit placeat repellendus quia molestias pariatur vel omnis cupiditate dolores, fuga obcaecati facilis necessitatibus minima ipsum et quisquam, sit sapiente optio error? Voluptatibus, dolores, eligendi tempora ratione ullam sit nihil, eos repellendus officia nisi laboriosam.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            how to order ?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem, delectus pariatur eveniet similique quod totam, deserunt officia nesciunt mollitia voluptatem veritatis. Deleniti neque rem reprehenderit sint placeat iusto autem nobis aliquid laboriosam. Dignissimos explicabo nihil cupiditate distinctio! Vitae est, beatae nobis praesentium tenetur deleniti ab ut minima voluptatibus. Praesentium, veritatis, perferendis molestiae in eaque provident repudiandae mollitia aliquid quia maxime quos aut delectus nulla facere distinctio suscipit accusantium placeat voluptas natus non eligendi officia. Sequi sed incidunt ex quam.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            how to make payment ?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt placeat mollitia fugit quasi quia, illum quos culpa perspiciatis aspernatur dolorum soluta sapiente, rerum omnis quo explicabo pariatur. Quas in rem rerum nihil! Ducimus dolor fuga debitis fugit inventore quam, perspiciatis amet numquam nobis eligendi at minus similique officia laboriosam libero necessitatibus neque error dolores, eum quasi, illum ipsa praesentium. Minus hic tenetur in autem repellendus cupiditate? Commodi iure molestiae nam esse quas consequatur vitae et autem quia nesciunt, minus, porro quis nulla facilis, expedita possimus dolorum nostrum maiores? Soluta recusandae laudantium magni veniam vel ducimus nam expedita officia harum optio.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            who is our best cheef ?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt placeat mollitia fugit quasi quia, illum quos culpa perspiciatis aspernatur dolorum soluta sapiente, rerum omnis quo explicabo pariatur. Quas in rem rerum nihil! Ducimus dolor fuga debitis fugit inventore quam, perspiciatis amet numquam nobis eligendi at minus similique officia laboriosam libero necessitatibus neque error dolores, eum quasi, illum ipsa praesentium. Minus hic tenetur in autem repellendus cupiditate? Commodi iure molestiae nam esse quas consequatur vitae et autem quia nesciunt, minus, porro quis nulla facilis, expedita possimus dolorum nostrum maiores? Soluta recusandae laudantium magni veniam vel ducimus nam expedita officia harum optio.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            how to book a seat ?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt placeat mollitia fugit quasi quia, illum quos culpa perspiciatis aspernatur dolorum soluta sapiente, rerum omnis quo explicabo pariatur. Quas in rem rerum nihil! Ducimus dolor fuga debitis fugit inventore quam, perspiciatis amet numquam nobis eligendi at minus similique officia laboriosam libero necessitatibus neque error dolores, eum quasi, illum ipsa praesentium. Minus hic tenetur in autem repellendus cupiditate? Commodi iure molestiae nam esse quas consequatur vitae et autem quia nesciunt, minus, porro quis nulla facilis, expedita possimus dolorum nostrum maiores? Soluta recusandae laudantium magni veniam vel ducimus nam expedita officia harum optio.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            how to visit us ?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt placeat mollitia fugit quasi quia, illum quos culpa perspiciatis aspernatur dolorum soluta sapiente, rerum omnis quo explicabo pariatur. Quas in rem rerum nihil! Ducimus dolor fuga debitis fugit inventore quam, perspiciatis amet numquam nobis eligendi at minus similique officia laboriosam libero necessitatibus neque error dolores, eum quasi, illum ipsa praesentium. Minus hic tenetur in autem repellendus cupiditate? Commodi iure molestiae nam esse quas consequatur vitae et autem quia nesciunt, minus, porro quis nulla facilis, expedita possimus dolorum nostrum maiores? Soluta recusandae laudantium magni veniam vel ducimus nam expedita officia harum optio.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            is there any offer ?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt placeat mollitia fugit quasi quia, illum quos culpa perspiciatis aspernatur dolorum soluta sapiente, rerum omnis quo explicabo pariatur. Quas in rem rerum nihil! Ducimus dolor fuga debitis fugit inventore quam, perspiciatis amet numquam nobis eligendi at minus similique officia laboriosam libero necessitatibus neque error dolores, eum quasi, illum ipsa praesentium. Minus hic tenetur in autem repellendus cupiditate? Commodi iure molestiae nam esse quas consequatur vitae et autem quia nesciunt, minus, porro quis nulla facilis, expedita possimus dolorum nostrum maiores? Soluta recusandae laudantium magni veniam vel ducimus nam expedita officia harum optio.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"></div>
+  </div>
+  </div>
+
+  <!-- canvas  -->
+  <canvas id="restaurant-canvas"></canvas>
+
 
     <!-- Footer -->
-    <footer>
-      <!-- Footer content goes here -->
+    <footer class="footer bg-dark text-light" style="margin-bottom: 100px;">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum ipsum vel nisi tempor, sed placerat lacus dapibus.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Opening Hours</h5>
+            <ul class="list-unstyled">
+              <li>Monday - Friday: 9:00 AM - 10:00 PM</li>
+              <li>Saturday: 10:00 AM - 11:00 PM</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <address>
+              123 Street, City<br>
+              Country<br>
+              Phone: +1234567890<br>
+              Email: info@example.com
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-secondary py-2">
+        <div class="container text-center">
+          <p class="mb-0">&copy; 2023 Foodie. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
+
+    <!-- other requirement  -->
+    <h4>alert / toast</h4>
+    <div id="liveAlertPlaceholder" class="position-fixed top-0 end-0 mt-1 me-2" ></div>
+    <button type="button" class="btn btn-primary " id="liveAlertBtnS" >Success</button>
+    <button type="button" class="btn btn-warning " id="liveAlertBtnW" >warning</button>
+    <button type="button" class="btn btn-danger " id="liveAlertBtnF" >failed</button>
+    
+    <h4>modal</h4>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            this is a sample of model. it can be used in changing information
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+    <script>
+      const toastTrigger = document.getElementById('liveToastBtn')
+      const toastLiveExample = document.getElementById('liveToast')
+
+      if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+          toastBootstrap.show()
+        })
+      }
+    </script>
   </body>
 </html>
